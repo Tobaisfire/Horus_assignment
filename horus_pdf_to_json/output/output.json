@@ -1,0 +1,39 @@
+{
+    "horus_reference": "IN-LBP-987103",
+    "supplier": "GLOBAL LOGISTICS SOLUTIONS LTD.",
+    "vat_id": "TRD100002",
+    "issue_date": "2025-11-28T10:00:00Z",
+    "payment_terms": "Net 45 Days",
+    "subtotal": 6600.0,
+    "total": 7720.0,
+    "line_items": [
+        {
+            "Code": "LND-A1",
+            "Description": "Air Freight, EU-US",
+            "Rate": "1,250.00",
+            "Qty": "4",
+            "Sub-Total": "5,000.00"
+        },
+        {
+            "Code": "SEA-B2",
+            "Description": "Ocean Cargo, APAC",
+            "Rate": "800.00",
+            "Qty": "2",
+            "Sub-Total": "1,600.00"
+        },
+        {
+            "Code": "TAX-VAT",
+            "Description": "Standard VAT (20%)",
+            "Rate": "N/A",
+            "Qty": "N/A",
+            "Sub-Total": "1,320.00"
+        },
+        {
+            "Code": "DISC-7",
+            "Description": "Loyalty Discount",
+            "Rate": "-200.00",
+            "Qty": "1",
+            "Sub-Total": "-200.00"
+        }
+    ]
+}

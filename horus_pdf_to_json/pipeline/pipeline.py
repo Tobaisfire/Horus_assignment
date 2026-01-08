@@ -15,8 +15,9 @@ class DocumentParser:
     Docstring for DocumentParser.
     Bronze-Silver-Gold pipeline to parse PDF documents and extract structured data.
     """
-    def __init__(self, path: str):
+    def __init__(self, path: str, output_json_path: str = None):
         self.path = path
+        self.output_json_path = output_json_path
 
     def _log(self, audit_id, message: str, level: str = "info") -> None:
 
@@ -93,8 +94,8 @@ class DocumentParser:
         self._log(audit_id, message=f"Document processing completed for {self.path}", level="info")
 
         # Save Extracted Data to JSON File
-
-        with open(f"extracted_data_{audit_id}.json", "w", encoding="utf-8") as json_file:
+        
+        with open(self.output_json_path, "w", encoding="utf-8") as json_file:
             json_file.write(text_fields_parsed.to_json())
 
         return {
