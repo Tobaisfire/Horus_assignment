@@ -7,6 +7,8 @@ print(BASE_DIR)
 PDF_PATH = BASE_DIR / "data" / "Logistics_Invoice_IN-horus-987103 (1).pdf"
 
 print(PDF_PATH)
-parser = DocumentParser(str(PDF_PATH))
-result = parser.parse_output()
+
+if __name__ == "__main__":
+    parser = DocumentParser(str(PDF_PATH))
+    result = parser.process_document()
 

@@ -3,6 +3,10 @@ from typing import List, Dict
 from pydantic import BaseModel
 
 class TableData(BaseModel):
+    """
+    Docstring for TableData
+    """ 
+
     headers: List[str]
     rows: List[List[str]]
 
@@ -18,6 +22,10 @@ class TableData(BaseModel):
     
         
 class TextData(BaseModel):
+    """
+    Docstring for TextData
+    """
+
     content: str
 
     def __str__(self) -> str:
@@ -25,6 +33,10 @@ class TextData(BaseModel):
     
 
 class TextToJson(BaseModel):
+    """
+    Validation model for extracted text data to Final JSON.
+    """
+
     horus_reference: str
     supplier: str
     vat_id: str
