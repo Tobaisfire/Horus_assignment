@@ -1,0 +1,19 @@
+{
+  "audit_id": "b7c8d9e0-f1g2-3456-7890-abcdef012345",
+  "document_type": "INVOICE",
+  "supplier_name": "TECH SOLUTIONS INC.",
+  "invoice_date": "2025-12-05",
+  "total_amount": 1045.00,
+  "line_items": [
+    {
+      "description": "Cloud Compute Credits",
+      "quantity": 1,
+      "unit_price": 750.00
+    },
+    {
+      "description": "Data Storage (Storage only)",
+      "quantity": 1,
+      "unit_price": 200.00
+    }
+  ]
+}
